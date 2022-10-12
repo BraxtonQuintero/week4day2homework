@@ -2,13 +2,15 @@
 
 places = [" ","Argentina", " ", "San Diego","","  ","","Boston","New York"]
 
-list(filter(lambda x: x.strip(" ") if True else None, places))
+new_places = list(filter(lambda x: x.strip(), places))
+print(new_places)
 
 # Exercise 2
 
 authors = ["Joel Carter", "Victor aNisimov", "Andrew P. Garfield","David hassELHOFF","Gary A.J. Bernstein"]
 
-sorted(authors, key=lambda x: x.split(" ")[-1].title())
+new_authors = sorted(authors, key=lambda x: x.split()[-1].title())
+print(new_authors)
 
 # Exercise 3
 
